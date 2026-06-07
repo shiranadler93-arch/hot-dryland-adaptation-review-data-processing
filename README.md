@@ -1,8 +1,5 @@
 # hot-dryland-adaptation-review-solutions effectiveness estimation
-## Part 1 — Data Processing
-## Part 2 — Logit Model Analysis
-## Requirements
-## How to Run
+
 
 # Part 1: Data Processing
 Data Processing for Solution Combinations - Preparing the data for use in a logit model
