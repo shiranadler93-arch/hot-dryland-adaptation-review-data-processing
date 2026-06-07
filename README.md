@@ -1,4 +1,4 @@
-# hot-dryland-adaptation-review-solutions effectiveness estimation
+# Hot-dryland adaptation- solutions effectiveness estimation
 
 
 # Part 1: Data Processing
