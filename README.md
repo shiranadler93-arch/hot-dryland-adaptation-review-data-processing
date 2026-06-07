@@ -3,7 +3,7 @@
 
 # Part 1: Data Processing
 Data Processing for Solution Combinations - Preparing the data for use in a logit model
-"""
+
 This module defines the `DataProcessor` class, which handles the entire data processing pipeline for solution combinations. 
 It includes methods for importing raw data from an Excel file, building a combination matrix, applying masking logic to filter out certain combinations and solutions, 
 updating labels and scores based on conversion instructions, and saving the processed data back to Excel files.
@@ -58,4 +58,3 @@ The main steps in the data processing pipeline for this phase are as follows:
 2. Place the raw data Excel file in the same directory as this script or provide the correct path to the file when initializing the `DataProcessor`.
 3. Run the script, and it will execute the complete data processing pipeline and save the processed data to Excel files with the specified prefix (default is 'logreg1').
 
-"""
