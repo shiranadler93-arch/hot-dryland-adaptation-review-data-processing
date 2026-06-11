@@ -1,6 +1,10 @@
 # Hot-dryland adaptation- design solutions effectiveness estimation
 
-
+# Raw data for analysis
+Excel file that includes
+1. column of solution combination index
+2. column for each examined measure (solution) in combination.
+3. effectiveness category: here we divided effectiveness classification into four categories for further analysis. For this paper analysis, in the data processing stage, we convert significantly effective to effective, and significantly ineffective to ineffective. 
 # Part 1: Data Processing
 Data Processing for Solution Combinations - Preparing the data for use in a logit model
 
