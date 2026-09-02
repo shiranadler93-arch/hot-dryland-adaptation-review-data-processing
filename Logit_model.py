@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-from data_processing import DataProcessor
+from data_processing import DataProcessor  # Use relative import if Data_processing is in the same package
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import balanced_accuracy_score, classification_report, confusion_matrix, accuracy_score
 from sklearn.preprocessing import OneHotEncoder
