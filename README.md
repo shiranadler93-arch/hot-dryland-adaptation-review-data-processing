@@ -19,10 +19,23 @@ data, training, evaluating, saving outputs) lives in `result_reproduction.py`.
 
 ## Setup
 
-```bash
+```Shell
 git clone <this-repo-url>
 cd <this-repo>
-python -m venv .venv && source .venv/bin/activate   # optional but recommended
+python -m venv .venv
+```
+
+Activate the virtual environment (optional, but recommended) — the command differs by shell:
+
+| Shell                     | Command                          |
+| ------------------------- | -------------------------------- |
+| bash / zsh (Linux, macOS) | `source .venv/bin/activate`    |
+| Windows PowerShell        | `.\.venv\Scripts\Activate.ps1` |
+| Windows cmd.exe           | `.venv\Scripts\activate.bat`   |
+
+Then install dependencies:
+
+```Shell
 pip install -r requirements.txt
 # or, for an installable CLI command:
 pip install -e .
@@ -30,13 +43,13 @@ pip install -e .
 
 ## Running the full pipeline
 
-```bash
+```Shell
 python -m solution_efficiency_scoring.result_reproduction
 ```
 
 or, if installed with `pip install -e .`:
 
-```bash
+```Shell
 train-logit-model
 ```
 
@@ -47,7 +60,7 @@ Options:
 | `input_file`      | (required)                 | Path to the raw Excel data file        |
 | `--output-dir`    | `outputs`                | Directory to write all output files to |
 | `--output-prefix` | `logreg1_updated_labels` | Prefix used for output filenames       |
-| `--n-iter`        | `20000`                  | Number of training iterations          |
+| `--n-iter`        | `5000`                   | Number of training iterations          |
 | `--alpha`         | `0.1`                    | Class-weight adjustment rate           |
 | `--beta`          | `0.05`                   | Sample-weight adjustment rate          |
 
