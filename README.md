@@ -6,7 +6,7 @@ on combinations of solutions and their outcomes.
 ## Structure
 
 ```
-solution_scoring/
+solution_efficiency_scoring/
 ├── __init__.py        			# public API: DataProcessor, LogitModelPipeline
 ├── data_processing.py 			# DataProcessor: raw Excel -> masked combination matrix
 ├── logit_model.py      		# LogitModelPipeline: fit / evaluate / extrapolate / save
@@ -57,7 +57,7 @@ Options:
 
 | Flag                | Default                    | Description                            |
 | ------------------- | -------------------------- | -------------------------------------- |
-| `input_file`      | (required)                 | Path to the raw Excel data file        |
+| `--input_file`    | `data.xlsx`              | Path to the raw Excel data file        |
 | `--output-dir`    | `outputs`                | Directory to write all output files to |
 | `--output-prefix` | `logreg1_updated_labels` | Prefix used for output filenames       |
 | `--n-iter`        | `5000`                   | Number of training iterations          |
